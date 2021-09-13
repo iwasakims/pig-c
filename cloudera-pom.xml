@@ -80,7 +80,24 @@
             <enabled>true</enabled>
           </snapshots>
         </repository>
+        <repository>
+          <id>cdh.libs-staging-local.repo</id>
+          <url>https://repository.cloudera.com/artifactory/libs-staging-local</url>
+          <name>CDH libs-staging-local Repository</name>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
       </repositories>
+
+      <pluginRepositories>
+        <pluginRepository>
+          <id>cdh.plugin.repo</id>
+          <name>Cloudera</name>
+          <url>https://repository.cloudera.com/artifactory/libs-release-local</url>
+        </pluginRepository>
+      </pluginRepositories>
+
     </profile>
     <!-- Similar logic to allow us to skip compilation/tests when run -->
     <!-- via do-release-build or packaging scripts, since we're already -->

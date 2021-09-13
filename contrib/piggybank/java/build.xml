@@ -90,7 +90,7 @@
     <loadproperties srcfile="${ivy.dir}/libraries.properties"/>
     <property name="ivysettings.xml" location="${ivy.dir}/ivysettings.xml" />
     <property name="ivy.jar" location="${ivy.dir}/ivy-${ivy.version}.jar"/>
-    <property name="mvnrepo" value="http://repo2.maven.org/maven2"/>
+    <property name="mvnrepo" value="https://repo1.maven.org/maven2"/>
     <property name="ivy_repo_url" value="${mvnrepo}/org/apache/ivy/ivy/${ivy.version}/ivy-${ivy.version}.jar"/>
 
     <target name="ivy-init-dirs">

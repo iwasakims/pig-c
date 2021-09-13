@@ -55,6 +55,8 @@
       root="https://repository.cloudera.com/content/groups/cdh-releases-rcs" checkmodified="true"/>
     <ibiblio name="cloudera-snapshots" m2compatible="true" pattern="${maven2.pattern.ext}"
       root="https://repository.cloudera.com/content/repositories/snapshots" checkmodified="true"/>
+    <ibiblio name="libs-release-local" m2compatible="true" pattern="${maven2.pattern.ext}"
+      root="https://repository.cloudera.com/artifactory/libs-release-local" checkmodified="true"/>
     <filesystem name="fs" m2compatible="true" checkconsistency="false" force="${force-resolve}"
          checkmodified="true" changingPattern=".*SNAPSHOT">
 
@@ -71,6 +73,7 @@
       <resolver ref="jboss-maven2"/>
       <resolver ref="apache-snapshots"/>
       <resolver ref="cloudera-releases"/>
+      <resolver ref="libs-release-local"/>
     </chain>
     <chain name="default" dual="true" checkmodified="true">
       <resolver ref="internal"/>
@@ -84,6 +87,7 @@
       <resolver ref="reactor-repo" />
       <resolver ref="cloudera-releases" />
       <resolver ref="cloudera-snapshots" />
+      <resolver ref="libs-release-local"/>
     </chain>
   </resolvers>
   <modules>
